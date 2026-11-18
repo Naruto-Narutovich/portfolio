@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yuliia Medvetska — Creative Strategist · Portfolio</title>
+  <meta name="description" content="Performance creative strategist for subscription apps. 30–40 ad concepts a week, tested, iterated and scaled." />
+  <meta property="og:type" content="website" />
+  <!-- Прев'ю для LinkedIn/Telegram: ці теги читаються без JS, тому їх редагують тут. og:image — повна адреса після публікації -->
+  <meta property="og:title" content="Yuliia Medvetska — Creative Strategist" />
+  <meta property="og:description" content="30–40 ad concepts a week, tested, iterated and scaled. Cases: BetterMe, Aura, gaming, e-commerce. Plus automations." />
+  <meta property="og:image" content="" /><!-- TODO: https://<твій-сайт>/media/og-cover.jpg -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#F1E8DD" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23FF5A36'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='800' font-size='34' text-anchor='middle' fill='%231F1B18'%3EY%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top" data-bind="brand"></a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#work">work</a>
+      <a href="#volume">volume</a>
+      <a href="#process">process</a>
+      <a href="#automations">automations</a>
+      <a class="pill pill--dark" href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="hero"></section>
+    <section class="stats wrap" id="stats" aria-label="Key numbers"></section>
+    <section class="impact wrap" id="impact"></section>
+    <section class="volume wrap" id="volume"></section>
+    <section class="work" id="work"></section>
+    <section class="process wrap" id="process"></section>
+    <section class="automations wrap" id="automations"></section>
+  </main>
+
+  <footer>
+    <section class="contact" id="contact"></section>
+    <div class="footer wrap">
+      <span data-bind="footer"></span>
+      <a href="#top">back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Creative preview" hidden>
+    <button class="lightbox__close" type="button" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous">←</button>
+    <div class="lightbox__body">
+      <div class="lightbox__media"></div>
+      <aside class="lightbox__info"></aside>
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next">→</button>
+  </div>
+
+  <noscript><p class="wrap">This portfolio needs JavaScript to show the work.</p></noscript>
+
+  <script src="content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

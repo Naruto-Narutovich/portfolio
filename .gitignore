@@ -1,0 +1,4 @@
+raw/*
+!raw/.gitkeep
+.DS_Store
+_work/
