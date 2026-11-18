@@ -190,7 +190,7 @@
   /* ---------- work / cases ---------- */
   const galleries = []; // for lightbox navigation
 
-  function creativeCard(item, galleryIndex, itemIndex) {
+  function creativeCard(item, galleryIndex, itemIndex, captions = true) {
     const src = parseSource(item.src);
     const ratio = ratioCss(item.ratio);
     let thumb;
@@ -234,7 +234,7 @@
       "li",
       { class: "card" },
       frame,
-      h(
+      captions && h(
         "div",
         { class: "card__meta" },
         playable && has(item.format) && h("span", { class: "card__tag" }, item.format),
@@ -322,9 +322,9 @@
     });
   })();
 
-  function gallery(items) {
+  function gallery(items, captions = true) {
     const gi = galleries.push(items) - 1;
-    return h("ul", { class: "grid" }, items.map((it, ii) => creativeCard(it, gi, ii)));
+    return h("ul", { class: "grid" }, items.map((it, ii) => creativeCard(it, gi, ii, captions)));
   }
 
   /* ---------- formats I authored + gaming / e-com (inside #work) ---------- */
@@ -358,7 +358,7 @@
                     f.sticker && sticker(f.sticker, `tilt-${i % 3}`),
                     h("p", null, f.text)
                   ),
-                  (f.examples || []).length > 0 && gallery(f.examples)
+                  (f.examples || []).length > 0 && gallery(f.examples, false) // без підписів під картками
                 )
               )
             )
