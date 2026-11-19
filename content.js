@@ -29,13 +29,12 @@ window.PORTFOLIO = {
     role: "creative strategist",
     pageTitle: "Yuliia Medvetska — Creative Strategist · Portfolio",
     description:
-      "Performance creative strategist for subscription apps. 30–40 ad concepts a week, tested, iterated and scaled. Plus the automations that keep that volume sane.",
+      "Performance creative strategist for subscription apps. 30–40 ad concepts a week, tested, iterated and scaled.",
     ogImage: "media/og-cover.jpg", // TODO: картинка-прев'ю для LinkedIn/Telegram, 1200×630
     year: "2026",
   },
 
   hero: {
-    badge: "2026 · open to work",
     titleLines: ["creative", "strategist"],
     stickers: [
       { text: "30–40 concepts / week", color: "lilac" },
@@ -96,12 +95,6 @@ window.PORTFOLIO = {
       branches: ["hook", "voiceover", "visual", "format", "length"],
       caption: "3–5 variations each × 30–40 concepts a week",
     },
-    pillars: [
-      { title: "briefs that don't need a call", text: "Storyboard, references, on-screen copy and timestamps. Editors build exactly what I meant." },
-      { title: "one naming convention", text: "Product · angle · format · variation. Results can be read in seconds on Monday." },
-      { title: "a test log, not a feeling", text: "Every hypothesis is closed as confirmed or invalidated before new ideas go in." },
-      { title: "automate the routine", text: "Naming, tracking and reporting run on their own, so my time goes to ideas.", link: { label: "see automations", href: "#automations" } },
-    ],
   },
 
   // =========================== КЕЙСИ ===========================
@@ -348,7 +341,7 @@ window.PORTFOLIO = {
         },
         {
           title: "pilates",
-          note: "",
+          note: "Approach: an Instagram trend adapted for ads, UGC workout demos, and split-screen statics that show the product line and the workout in one frame.",
           items: [
             {
               src: "media/betterme/pilates/pilates-03.mp4",
@@ -357,6 +350,7 @@ window.PORTFOLIO = {
               format: "UGC · story · workout demo",
               angle: "four weeks of home pilates to get summer-ready",
               hook: "“This is Lessie”",
+              note: "An Instagram trend, adapted into an ad",
             },
             {
               src: "media/betterme/pilates/pilates-01.mp4",
@@ -365,6 +359,16 @@ window.PORTFOLIO = {
               format: "UGC · talking head · workout demo",
               angle: "a 28-day somatic plan to get out of survival mode",
               hook: "“If you want to get out of survival mode by yourself…”",
+              note: "UGC: a creator talking over her own workout",
+            },
+            {
+              src: "media/betterme/pilates/pilates-04.mp4",
+              poster: "media/betterme/pilates/pilates-04.jpg",
+              title: "Pilates Essential Kit",
+              format: "UGC · unboxing · workout demo",
+              angle: "a home pilates challenge with a starter kit, no pricey reformer",
+              hook: "“We are looking for girls who haven't exercised in years and want to start a challenge before August”",
+              note: "Unboxing the kit, then the workout and the app plan",
             },
             {
               src: "media/betterme/pilates/pilates-02.jpg",
@@ -372,7 +376,7 @@ window.PORTFOLIO = {
               format: "static",
               angle: "pilates at home with the right equipment",
               hook: "“Meninas,” (Girls, in Portuguese)",
-              note: "Localised for Brazil/Portugal",
+              note: "Split screen: the product line and the workout in one frame. Localised for Brazil/Portugal.",
             },
           ],
         },
@@ -386,15 +390,17 @@ window.PORTFOLIO = {
       sticker: { text: "found the angle", color: "orange" },
       title: "the vagus nerve angle",
       summary:
-        "The question was how to sell lab tests. I pre-tested 5 topics to find the answer. The vagus nerve won, and every next round of creatives was built on it.",
-      tags: ["topic pre-testing", "lab tests", "winning angle", "scaling formats"],
+        "The product was lab tests, and selling them head-on didn't work. I proposed leading with a content product and offering lab tests as an add-on, then pre-tested topics to build it on. The vagus nerve won, and every next round of creatives was built on it.",
+      tags: ["lab tests", "content product", "add-on upsell", "topic pre-testing", "winning angle"],
       story: [
-        { label: "pre-test", text: "I pre-tested 5 topics to understand how lab tests should be sold: which theme makes people care enough to order one." },
-        { label: "breakthrough", text: "The vagus nerve topic took off and clearly beat the rest." },
+        { label: "context", text: "The main product was lab tests. I started by selling them directly: ads said that if something is bothering you, get tested. It didn't work." },
+        { label: "pivot", text: "I proposed a content product instead, like a workout or meditation plan, with lab tests sold as an add-on to it." },
+        { label: "pre-test", text: "I tested topics for that product: procrastination and burnout, women's health, men's health, menopause, and experimental niche ones like fascia and swelling." },
+        { label: "breakthrough", text: "The vagus nerve took off and clearly beat the rest. It became a health trend in 2025 and still is one." },
         { label: "scale", text: "All the next creatives were tested on that topic: new formats, hooks and creators, so the angle could scale without burning out." },
       ],
       highlight: {
-        label: "5 topics pre-tested → winner",
+        label: "topics pre-tested → winner",
         value: "vagus nerve",
         note: "the topic every next creative was built on",
         sticker: { text: "pre-test → scale", color: "lilac" },
@@ -402,12 +408,62 @@ window.PORTFOLIO = {
       groups: [
         {
           title: "vagus nerve · different creative types",
-          note: "Same angle, different executions.",
+          note: "Same angle, different executions. Every video leads into the 28-day vagus nerve reset plan and ends on “take a test”.",
           items: [
-            { src: "", title: "Vagus nerve · UGC", format: "UGC", angle: "", hook: "" },
-            { src: "", title: "Vagus nerve · expert", format: "talking head", angle: "", hook: "" },
-            { src: "", title: "Vagus nerve · explainer", format: "motion", angle: "", hook: "" },
-            { src: "", title: "Vagus nerve · static", format: "static", angle: "", hook: "", ratio: "4:5" },
+            {
+              src: "media/aura/vagus-nerve-04.mp4",
+              poster: "media/aura/vagus-nerve-04.jpg",
+              title: "Unbalanced vagus nerve · expert hook",
+              format: "expert hook · UGC story",
+              angle: "an unbalanced vagus nerve behind neck tension and migraines",
+              hook: "“This is how unbalanced vagus nerve triggered neck tension and migraines”",
+              ratio: "4:5",
+            },
+            {
+              src: "media/aura/vagus-nerve-01.mp4",
+              poster: "media/aura/vagus-nerve-01.jpg",
+              title: "Years of neck tension",
+              format: "UGC · story",
+              angle: "a 28-day vagus nerve reset for chronic neck tension",
+              hook: "“For years I lived with chronic neck tension…”",
+              ratio: "4:5",
+            },
+            {
+              src: "media/aura/vagus-nerve-02.mp4",
+              poster: "media/aura/vagus-nerve-02.jpg",
+              title: "Reply to a comment",
+              format: "AI creator · comment reply",
+              angle: "no expensive devices, just reset your vagus nerve",
+              hook: "“Wait… you don't need expensive devices to stop migraines and neck tension — just reset your Vagus Nerve?”",
+              ratio: "4:5",
+            },
+            {
+              src: "media/aura/vagus-nerve-05.mp4",
+              poster: "media/aura/vagus-nerve-05.jpg",
+              title: "10 years of neck tension · clay",
+              format: "AI · clay animation",
+              angle: "a stuck vagus nerve was the real cause all along",
+              hook: "“I spent 10 years trying to release neck tension and stop migraines until I realized a stuck vagus nerve was the real problem”",
+              ratio: "4:5",
+            },
+            {
+              src: "media/aura/vagus-nerve-06.mp4",
+              poster: "media/aura/vagus-nerve-06.jpg",
+              title: "Heart · warning signs",
+              format: "AI · 3D character",
+              angle: "warning signs of imbalanced blood pressure",
+              hook: "“5 warning signs of imbalanced blood pressure”",
+              note: "Same funnel, new symptom: blood pressure",
+              ratio: "4:5",
+            },
+            {
+              src: "media/aura/vagus-nerve-03.jpg",
+              title: "Printable vagus nerve reset",
+              format: "static · printable plan",
+              angle: "a printable plan to ease neck tension and anxiety",
+              hook: "“Printable vagus nerve reset”",
+              ratio: "4:5",
+            },
           ],
         },
       ],
@@ -540,6 +596,15 @@ window.PORTFOLIO = {
               note: "Scarcity hook; details shown up close",
             },
             {
+              src: "media/ecom/ecom-06.mp4",
+              poster: "media/ecom/ecom-06.jpg",
+              title: "Matching set · piece by piece",
+              format: "studio try-on · text-on-screen",
+              angle: "one set, every piece shown: top, shorts, hoodie, fabric",
+              hook: "One-word captions over a quick try-on",
+              note: "Each cut names the piece on screen",
+            },
+            {
               src: "media/ecom/ecom-01.mp4",
               poster: "media/ecom/ecom-01.jpg",
               title: "Performance collection",
@@ -547,6 +612,15 @@ window.PORTFOLIO = {
               angle: "activewear built for strength and focus",
               hook: "“Performance collection”",
               note: "Flat-lays and fabric close-ups next to the model",
+            },
+            {
+              src: "media/ecom/ecom-07.mp4",
+              poster: "media/ecom/ecom-07.jpg",
+              title: "Iconic Catsuit",
+              format: "product demo · split screen",
+              angle: "one catsuit shown from every side, in five colours",
+              hook: "“Iconic CATSUIT”",
+              note: "Product sketch and colour swatches next to the model",
             },
             {
               src: "media/ecom/ecom-05.jpg",
@@ -647,6 +721,44 @@ window.PORTFOLIO = {
         examples: [], // TODO: додати приклади,
       },
       {
+        title: "text on the body",
+        sticker: { text: "the body is the caption", color: "orange" },
+        text: "I came up with putting the offer right on the body: a challenge start date written on the skin, or the whole message laid over an illustrated back. The offer and the result read in one frame.",
+        examples: [
+            {
+              src: "media/betterme/formats/text-on-body/formats-text-on-body-02.mp4",
+              poster: "media/betterme/formats/text-on-body/formats-text-on-body-02.jpg",
+              title: "Start home pilates on 7th July",
+              format: "UGC · text on the body · workout demo",
+              angle: "4 weeks of home pilates to see results by August",
+              hook: "“4 weeks of this and by August…” with the start date written on the belly",
+            },
+            {
+              src: "media/betterme/formats/text-on-body/formats-text-on-body-03.mp4",
+              poster: "media/betterme/formats/text-on-body/formats-text-on-body-03.jpg",
+              title: "Home Pilates Studio · beach",
+              format: "UGC · text on the body · workout demo",
+              angle: "home pilates with small accessories, no pricey reformer",
+              hook: "“4 weeks of this and by August” with “Start Home Pilates on 7th July” on the body",
+            },
+            {
+              src: "media/betterme/formats/text-on-body/formats-text-on-body-01.mp4",
+              poster: "media/betterme/formats/text-on-body/formats-text-on-body-01.jpg",
+              title: "Calisthenics before August",
+              format: "illustration · text on the body → workout demo",
+              angle: "a calisthenics challenge for women who haven't exercised in years",
+              hook: "“We are looking for women who haven't exercised in years and want to start a calisthenics workout challenge before August”",
+            },
+            {
+              src: "media/betterme/formats/text-on-body/formats-text-on-body-04.jpg",
+              title: "Running challenge · October 12th",
+              format: "static · illustration · text on the body",
+              angle: "a beginner running challenge with a start date",
+              hook: "“For the girl who's never been a runner but really wants to become one”",
+            },
+        ],
+      },
+      {
         title: "illustrated cartoons",
         sticker: { text: "2024–25", color: "orange" },
         text: "A new format we came up with in 2024–25: animated illustrations. It worked especially well for the childhood trauma theme.",
@@ -741,47 +853,30 @@ window.PORTFOLIO = {
       },
     ],
     // TODO: залиш тільки те, чим реально користуєшся
-    stack: [
-      { group: "AI for research & writing", items: ["ChatGPT", "Claude", "Gemini", "Perplexity"] },
-      { group: "creative research & analytics", items: ["Foreplay", "Motion", "Meta Ads Manager"] },
-      { group: "team & production", items: ["Asana", "ClickUp", "Slack", "Notion"] },
-      { group: "automation", items: ["Make", "Zapier", "Google Apps Script"] },
-    ],
-  },
-
-  // =========================== АВТОМАТИЗАЦІЇ ===========================
-  // TODO: заміни на свої реальні автоматизації. image — скрін/схема (media/automations/...)
-  automations: {
-    kicker: "automations",
-    title: "systems I built so the team can ship more",
-    intro:
-      "Volume is only possible when the routine runs itself. These are the tools I built around the creative workflow.",
-    items: [
-      {
-        title: "brief generator",
-        problem: "Briefs took too long to write and still came back with questions.",
-        solution: "TODO: what you built: e.g. a template + AI step that turns an idea into a storyboard-ready brief.",
-        impact: "TODO: time saved / briefs per week",
-        tools: ["TODO"],
-        image: "",
-      },
-      {
-        title: "auto naming & tracking",
-        problem: "Hundreds of variations a month, impossible to read results by hand.",
-        solution: "TODO: e.g. names are generated from the brief and every ad lands in a tracking table automatically.",
-        impact: "TODO",
-        tools: ["TODO"],
-        image: "",
-      },
-      {
-        title: "weekly performance digest",
-        problem: "Monday analysis meant hours of copying numbers between dashboards.",
-        solution: "TODO: e.g. a scheduled report that pulls winners, fatigue signals and open hypotheses into one doc.",
-        impact: "TODO",
-        tools: ["TODO"],
-        image: "",
-      },
-    ],
+    // Блок "AI in production": окремі картки під циклом, перед stack
+    ai: {
+      title: "AI in production",
+      intro: "I keep learning new tools. I brought AI into production early, before AI creatives were everywhere.",
+      steps: [
+        {
+          label: "early days",
+          title: "Midjourney & Leonardo",
+          text: "I started with Midjourney and Leonardo and put AI visuals into real production from the first stages, when AI creatives weren't mainstream yet.",
+        },
+        {
+          label: "custom pipelines",
+          title: "Stable Diffusion & ComfyUI",
+          text: "I used Stable Diffusion and ComfyUI to add variety to creatives and build new clickable formats, like AI first frames, a format I came up with.",
+          link: { label: "see formats I authored", href: "#formats" },
+        },
+        {
+          label: "now",
+          title: "a full AI toolkit",
+          text: "Text, code, video, voice, music and design, each with its own tool.",
+          tools: ["ChatGPT", "Claude", "Claude Code", "Veo 3", "Kling", "Higgsfield", "ElevenLabs", "Suno", "Lovart"],
+        },
+      ],
+    },
   },
 
   // =========================== КОНТАКТ ===========================

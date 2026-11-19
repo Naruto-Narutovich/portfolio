@@ -72,7 +72,7 @@
     const H = C.hero;
     const root = document.getElementById("hero");
     root.append(
-      h("div", { class: "hero__top" }, h("p", { class: "hero__name" }, C.meta.name), h("span", { class: "pill" }, H.badge)),
+      h("div", { class: "hero__top" }, h("p", { class: "hero__name" }, C.meta.name), has(H.badge) && h("span", { class: "pill" }, H.badge)),
       h(
         "h1",
         { class: "hero__title" },
@@ -170,6 +170,7 @@
           T.caption && h("figcaption", null, T.caption)
         )
       ),
+      (V.pillars || []).length > 0 &&
       h(
         "div",
         { class: "pillars" },
@@ -430,6 +431,28 @@
         )
       ),
       h("p", { class: "loop" }, h("span", { "aria-hidden": "true" }, "↻ "), "then back to 01 — every week"),
+      P.ai &&
+        h(
+          "div",
+          { class: "ai" },
+          h("h3", { class: "h2" }, P.ai.title),
+          has(P.ai.intro) && h("p", { class: "body" }, P.ai.intro),
+          h(
+            "div",
+            { class: "pillars" },
+            P.ai.steps.map((st, i) =>
+              h(
+                "article",
+                { class: "pillar" },
+                h("span", { class: "pillar__num" }, `${pad(i + 1)} · ${st.label}`),
+                h("h3", null, st.title),
+                h("p", null, st.text),
+                (st.tools || []).length > 0 && h("div", { class: "chips" }, st.tools.map((t) => h("span", { class: "chip" }, t))),
+                st.link && h("a", { class: "link", href: st.link.href }, st.link.label + " →")
+              )
+            )
+          )
+        ),
       P.stack &&
         h(
           "div",
@@ -450,6 +473,7 @@
   (function automations() {
     const A = C.automations;
     const root = document.getElementById("automations");
+    if (!A || !root) return;
     root.append(
       h(
         "div",
